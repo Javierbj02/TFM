@@ -1,0 +1,10 @@
+http://www.ease-crc.org/ont/SOMA.owl#causes
+http://www.ease-crc.org/ont/SOMA.owl#directlyCauses
+http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPreconditionOf
+http://www.ease-crc.org/ont/SOMA.owl#hasAlterationResult
+http://www.ease-crc.org/ont/SOMA.owl#isAlterationResultOf
+http://www.ease-crc.org/ont/SOMA.owl#isCausedByEvent
+http://www.ease-crc.org/ont/SOMA.owl#causesTransition
+http://www.ease-crc.org/ont/SOMA.owl#isOccurrenceOf
+http://www.ease-crc.org/ont/SOMA.owl#isOccurringIn
+http://www.ease-crc.org/ont/SOMA.owl#isAnsweredBy

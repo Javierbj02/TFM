@@ -1,0 +1,127 @@
+Context:
+- Domain: indoor hospital logistics.
+- Robot: mobile base with wheels, no arms; has a tray to carry small items like medicine.
+- Mission: follow a supervisor/nurse during medicine delivery assistance.
+
+
+Observed change (retract) at step 'Unexpected_event':
+- retracted triple: (PhysicalObject_Medicine1, DUL.hasLocation, PhysicalObject_ShadowTray)
+
+Allowed entities (MUST be used verbatim for participants and where):
+- Action_Follow
+- Action_PlaceMedicine
+- Agent_Nurse
+- Agent_Shadow
+- Collaboration_Collaborate
+- Goal_DeliveryAssistance
+- PhysicalObject_Medicine1
+- PhysicalObject_ShadowTray
+- PhysicalPlace_Corridor1
+- PhysicalPlace_Hall
+- PhysicalPlace_Hospital
+- PhysicalPlace_Room101
+- Plan_DeliverMedicine
+- Task_FollowSupervisor
+- Task_PlaceMedicine
+- Task_TakeMedicine
+
+Allowed event classes (MUST choose one of these verbatim):
+- Action
+- Collaboration
+- Event
+- Process
+
+Allowed object properties (do NOT invent; use only these in proposed_triples):
+- affects
+- associatedWith
+- causes
+- causesTransition
+- classifies
+- coparticipatesWith
+- defines
+- describes
+- directlyCauses
+- executesPlan
+- executesTask
+- expresses
+- follows
+- hasComponent
+- hasGoal
+- hasInScope
+- hasLocation
+- hasPart
+- hasParticipant
+- hasPlan
+- hasProperPart
+- hasRegion
+- hasSetting
+- hasTimeInterval
+- includesEvent
+- includesObject
+- includesTime
+- isAbout
+- isAffectedBy
+- isCausedByEvent
+- isClassifiedBy
+- isComponentOf
+- isConceptUsedIn
+- isDefinedIn
+- isDescribedBy
+- isDirectReactionTo
+- isEventIncludedIn
+- isExecutedIn
+- isExpressedBy
+- isGoalOf
+- isLocationOf
+- isObjectIncludedIn
+- isOccurrenceOf
+- isOccurringIn
+- isPartOf
+- isParticipantIn
+- isPlanExecutedIn
+- isPlanFor
+- isPlanOf
+- isPropertPartOf
+- isReactionTo
+- isReferenceOf
+- isRegionFor
+- isSatisfiedBy
+- isSettingFor
+- isTimeIncludedIn
+- isTimeIntervalOf
+- manifestsIn
+- precedes
+- sameSettingAs
+- satisfies
+- usesConcept
+
+Task:
+Propose EXACTLY 3 alternative causal hypotheses that could explain the retract.
+
+Return ONLY valid JSON with exactly 3 objects using this schema:
+[
+  {
+    "title": "short name",
+    "event_class": "OneAllowedEventClass",
+    "event_id": "EventIndividualName",
+    "participants": ["Entity1", "Entity2"],   // 1 or 2
+    "where": "Entity",
+    "proposed_triples": [
+      ["<event_id>", "<object_property>", "<Entity>"],
+      ["<event_id>", "<object_property>", "<Entity>"]
+    ]
+  }
+]
+
+Rules (STRICT):
+- Output MUST be valid JSON only.
+- event_class MUST be one of Allowed event classes.
+- event_id MUST follow the pattern "<event_class>_H1" / "<event_class>_H2" / "<event_class>_H3".
+  Examples: "Action_H1", "Collaboration_H2".
+- participants and where MUST be from Allowed entities (verbatim).
+- proposed_triples:
+  - MUST be a list of triples [s,p,o] (strings).
+  - Subject s MUST equal event_id (use the same exact string).
+  - p MUST be one of Allowed object properties.
+  - o MUST be one of Allowed entities.
+- Keep proposed_triples minimal (2-4 triples). Prefer hasParticipant and hasLocation when applicable.

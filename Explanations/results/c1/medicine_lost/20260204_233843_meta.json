@@ -1,0 +1,14 @@
+{
+  "scenario_id": "medicine_lost",
+  "n_runs": 20,
+  "temperature": 0.3,
+  "max_tokens": 700,
+  "model": "qwen2.5:14b",
+  "base_url": "http://XXX.XXX.XXX.XXX:XXXXX",
+  "started_at": "2026-02-04T23:38:43.923898",
+  "tbox_vocab": {
+    "n_event_types": 4,
+    "n_object_properties": 62,
+    "ontology_path": "data/ontologies/MLO.owl"
+  }
+}

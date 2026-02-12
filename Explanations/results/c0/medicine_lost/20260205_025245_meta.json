@@ -1,0 +1,9 @@
+{
+  "scenario_id": "medicine_lost",
+  "n_runs": 20,
+  "temperature": 0.3,
+  "max_tokens": 600,
+  "model": "qwen2.5:14b",
+  "base_url": "http://XXX.XXX.XXX.XXX:XXXXX",
+  "started_at": "2026-02-05T02:52:45.985315"
+}

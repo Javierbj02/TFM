@@ -1,0 +1,27 @@
+Ontology: TMO.owl
+Reasoner: HermiT
+Total execution time: 605.9607 seconds
+
+ONTOLOGY STATISTICS:
+Classes: 582
+Object properties: 327
+Data properties: 41
+Existing individuals: 10
+Estimated axioms: 8789
+
+CLASS EXAMPLES (first 5):
+1. Thing
+2. Affordance
+3. Concept
+4. Task
+5. Disposition
+
+INSTANCE CREATION BENCHMARK:
+Instances created: 8
+Time: 0.000000000 seconds
+
+REASONER BENCHMARK (HermiT):
+Time: 605.7788 seconds
+
+LOAD TIME:
+0.1327 seconds

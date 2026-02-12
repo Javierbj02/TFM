@@ -1,0 +1,28 @@
+Ontology: TMO_pruned.owl
+Reasoner: HermiT
+Total execution time: 6.5850 seconds
+
+ONTOLOGY STATISTICS:
+Classes: 35
+Object properties: 62
+Data properties: 2
+Existing individuals: 10
+Estimated axioms: 1203
+
+CLASS EXAMPLES (first 5):
+1. Thing
+2. Event
+3. Transition
+4. EventType
+5. Plan
+
+INSTANCE CREATION BENCHMARK:
+Instances created: 8
+Time: 0.000998259 seconds
+Speed: 8013.96 instances/second
+
+REASONER BENCHMARK (HermiT):
+Time: 6.5556 seconds
+
+LOAD TIME:
+0.0231 seconds

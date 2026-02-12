@@ -1,0 +1,6 @@
+http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal
+http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration
+http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace
+http://www.ease-crc.org/ont/SOMA.owl#Transporting

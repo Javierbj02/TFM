@@ -1,0 +1,6 @@
+http://www.ease-crc.org/ont/SOMA.owl#causes
+http://www.ease-crc.org/ont/SOMA.owl#causesTransition
+http://www.ease-crc.org/ont/SOMA.owl#directlyCauses
+http://www.ease-crc.org/ont/SOMA.owl#isCausedByEvent
+http://www.ease-crc.org/ont/SOMA.owl#isDirectReactionTo
+http://www.ease-crc.org/ont/SOMA.owl#isReactionTo

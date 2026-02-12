@@ -1,0 +1,16 @@
+{
+  "scenario_id": "medicine_lost",
+  "n_runs": 1,
+  "temperature": 0.3,
+  "max_tokens": 850,
+  "hops": 2,
+  "max_ctx_triples": 80,
+  "max_eventtype_items": 250,
+  "model": "qwen2.5:14b",
+  "base_url": "http://XXX.XXX.XXX.XXX:XXXXX",
+  "started_at": "2026-02-05T03:57:12.141729",
+  "config": "C3",
+  "extra_ontology_paths": [
+    "data/ontologies/TMO.owl"
+  ]
+}
